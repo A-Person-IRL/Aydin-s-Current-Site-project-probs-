@@ -46,5 +46,23 @@ button {
   font-size: 24px;
   border: 2px solid black;
   cursor: pointer;
-  background-color: #f0f0f0;
+  color: white;
+  font-weight: bold;
+}
+
+/* Styles for each button in the grid */
+.button:nth-child(1) {
+  background-color: #FF6666; /* Red */
+}
+
+.button:nth-child(2) {
+  background-color: #66B2FF; /* Blue */
+}
+
+.button:nth-child(3) {
+  background-color: #66FF66; /* Green */
+}
+
+.button:nth-child(4) {
+  background-color: #FFCC66; /* Orange */
 }
