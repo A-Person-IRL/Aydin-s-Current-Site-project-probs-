@@ -46,8 +46,9 @@ button {
   font-size: 24px;
   border: 2px solid black;
   cursor: pointer;
-  color: white;
   font-weight: bold;
+  transition: visibility 0.3s, opacity 0.3s ease-in-out;
+  opacity: 1;
 }
 
 /* Styles for each button in the grid */
