@@ -1,0 +1,50 @@
+/* Centering elements */
+body, html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Game Page Styles */
+.game-header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  width: 50vw;
+  height: 50vh;
+}
+
+.button {
+  padding: 20px;
+  font-size: 24px;
+  border: 2px solid black;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
