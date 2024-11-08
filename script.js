@@ -63,7 +63,7 @@ function showSequence() {
 function toggleBoxVisibility(boxNumber, isVisible) {
   const box = document.querySelector(`.button:nth-child(${boxNumber})`);
   if (box) {
-    box.style.visibility = isVisible ? "visible" : "hidden";
+    box.style.opacity = isVisible ? "1" : "0"; // Toggle opacity for visibility
   }
 }
 
@@ -85,10 +85,20 @@ function recordAnswer(boxNumber) {
     score += round * 10; // Increase score
     round++; // Move to the next round
     sessionStorage.setItem("score", score);
-    document.getElementById("scoreDisplay").textContent = `Score: ${score}`;
     displayMessage("Correct! Next round starting...");
 
     // Start the next round after a short delay
     setTimeout(startRound, 2000);
   }
+}
+
+// Reset the game if the user makes a mistake
+function resetGame() {
+  round = 1;
+  score = 0;
+  sequence = [];
+  userSequence = [];
+  sessionStorage.setItem("score", score);
+  displayMessage("Game Over! Starting over...");
+  setTimeout(startRound, 2000); // Restart the game after 2 seconds
 }
