@@ -46,9 +46,14 @@ button {
   font-size: 24px;
   border: 2px solid black;
   cursor: pointer;
+  color: white;
   font-weight: bold;
-  transition: visibility 0.3s, opacity 0.3s ease-in-out;
-  opacity: 1;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  opacity: 1; /* Fully visible by default */
+}
+
+.button[style*="opacity: 0"] {
+  pointer-events: none; /* Disable clicks when hidden */
 }
 
 /* Styles for each button in the grid */
