@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enter Username</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Screen</title>
+    <style>
+        /* This CSS will make the background of the entire page red */
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    </style>
 </head>
 <body>
-  <div class="center">
-    <h1>Welcome to the Game</h1>
-    <input type="text" id="username" placeholder="Enter your username">
-    <button onclick="enterGame()">Enter</button>
-  </div>
+    <h1>The Screen is Red!</h1>
+    <script>
+        // Optional: Add any JavaScript here if you want to add more functionality
+        console.log("The background has been set to red.");
+    </script>
 </body>
 </html>
