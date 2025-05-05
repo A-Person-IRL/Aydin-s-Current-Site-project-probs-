@@ -1,0 +1,66 @@
+/* style.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #008080; /* teal */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid white;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Header box styling */
+.header-box {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Paragraph text */
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Button styling */
+a.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a.button:hover {
+  background-color: #005fa3;
+}
